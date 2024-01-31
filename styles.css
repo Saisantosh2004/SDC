@@ -21,6 +21,7 @@ button{
     margin: 2px;
     cursor:pointer;
 }
+
 button:hover{
     background:tomato;
 }

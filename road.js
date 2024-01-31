@@ -27,7 +27,7 @@ class Road{
         return this.left + laneWidth/2+ Math.min(laneIndex,this.laneCount-1)*laneWidth;
     }
 
-    draw(){
+    draw(ctx){
         ctx.lineWidth = 5;
         ctx.strokeStyle = "white";
 
@@ -46,6 +46,6 @@ class Road{
             ctx.moveTo(border[0].x,border[0].y);
             ctx.lineTo(border[1].x,border[1].y);
             ctx.stroke();
-        })
+        });
     }
 }
